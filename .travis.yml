@@ -6,12 +6,3 @@ before_install:
   - chmod +x ci/travis_beforeDeploy.sh
 script: env && ./mvnw package -B
 before_deploy: "./ci/travis_beforeDeploy.sh"
-deploy:
-  edge: true
-  provider: cloudfoundry
-  username: tkess17@gmail.com
-  api: https://api.run.pivotal.io
-  organization: tkess17-org
-  space: development
-  password:
-    secure: ltb3E4UBggVjoK6FXVNLwauLVDQ7YNkbffMKAvb9hYIel4MV3y1H/Bkrn0DQEOoPmxKoTxkYBuVnIeuFw9rO8Um2091V2L2HEojQ8vvyBjKo9yZu7Gqjsv5sTKeefNgZpgG9msSg0X4ciLYx0WhySnrvj2Xt2rk1Ny3zGULTgezTVr3TUvDfM5cZbqV0sGvC2uLNnLJx0Q2n0ssMEe8xw4B+cwutZuK8BKjI6ccYS068WWJMA8xiZJW8Xs9OpBH0wgkRIQ6oBa5jeYyLRE08i1nWg96q6rma58YdaMJcGPUbTJk6f2cXxBX5WfDRCUhUo6U6/yG/18UVySmcr5dyIZSxRgF4gj6JOHecUgIGeReEIrznNNtodAOfl56HAC4G46P+n0dYNzCu4vbNI15bG0tnOslcxL8W4azHRjxdDAgTAuRsVXyy/3PPuApTZaAQIPrxec+c1jKlMsxPhOob/H9I6BKtWrh58mFJ6+8jyeTg2lrkPancrQn1t2Fh5x2IORErc0s2RHpiV1HC9hzhErIZwz7tZJ9rIKHk9zd4qsprVoDFfvNIcYgfebT+jpA/JDKvsScs+FQbfqJphvph64OIWjjXRMmgLAmMfjGmp2XBVlFyvihiBHDnFC6IMhJPM4OZwdcZOqbSuGTqsOvWpx79WfSNQosOGV8gRfxkKwk=
