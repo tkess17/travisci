@@ -3,5 +3,5 @@ jdk:
 - oraclejdk12
 before_install:
   - chmod +x mvnw
-script: env && ./mvnw package -B
+#script: env && ./mvnw package -B
 before_deploy: "./ci/travis_beforeDeploy.sh"
