@@ -1,0 +1,5 @@
+language: java
+jdk:
+- oraclejdk12
+script: env && ./mvnw package -B
+before_deploy: "./ci/travis_beforeDeploy.sh"
